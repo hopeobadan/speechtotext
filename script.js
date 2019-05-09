@@ -87,9 +87,7 @@ circle.style.top = e.clientY - rect.top - d/2 + 'px';
 	  
 	 
 		
-	  /*if (finalTranscript == "home"){
-			alert("hi");
-		}*/
+	  
     }
 	
 	function color(){
@@ -128,7 +126,7 @@ circle.style.top = e.clientY - rect.top - d/2 + 'px';
 	h1.onclick = function(){
 		
 		recognition.stop();
-		//window.open("index.html","_self");
+		
 		
 	}
 	
