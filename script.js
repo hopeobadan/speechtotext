@@ -97,22 +97,18 @@ circle.style.top = e.clientY - rect.top - d/2 + 'px';
 		
 		
 		
-		for(var i = 0; i <= colorList.length; i++){
-			if(finalTranscript == colorList[i]){
-				if(colorList[i] == 'sky blue'){
-					colorList[i] = 'skyblue';
-					space[0].style.background = colorList[i];
-					
+		
+			var newOne;
+			
+			
+			for(let i = 0; i < finalTranscript.length; i ++){
+				if(finalTranscript.charAt(i) == " "){
+					newOne = finalTranscript.replace(/ /g, "");
+					space[0].style.background = newOne;
 				}
-				else if(colorList[i] == 'royal blue'){
-					colorList[i] = 'royalblue';
-					space[0].style.background = colorList[i];
-				}					
-				
-				
 			}
 			
-			else if(finalTranscript.charAt(0) == finalTranscript.charAt(0).toUpperCase()){
+			if(finalTranscript.charAt(0) == finalTranscript.charAt(0).toUpperCase()){
 				finalTranscript.charAt(0).toLowerCase() + finalTranscript.slice(1);
 				space[0].style.background = finalTranscript;
 			}
@@ -123,7 +119,7 @@ circle.style.top = e.clientY - rect.top - d/2 + 'px';
 			setTimeout(stop, 2000);
 			
 		}
-	}
+	
 	
 	
 	
